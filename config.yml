@@ -37,42 +37,7 @@ color_scheme: auto
 # and read it from the plugin with ENV['MY_SECRET']. See plugins/README.md
 # for the canonical pattern.
 # -----------------------------------------------------------------------------
-plugins:
-  # Star counts for one or more GitHub repos.
-  # Use as: {{ vars.GithubRepoStarsCountPlugin['owner/repo'] }}
-  - GithubRepoStarsCountPlugin:
-      - ZhgChgLi/ZMarkupParser
-      - ZhgChgLi/ZReviewTender
-      - ZhgChgLi/ZMediumToMarkdown
-      - ZhgChgLi/linkyee
-
-  # Latest commit (sha / date / message) for a repo. Use as:
-  #   {{ vars.GithubLastCommitPlugin['owner/repo'].date }}
-  #   {{ vars.GithubLastCommitPlugin['owner/repo'].sha }}
-  - GithubLastCommitPlugin:
-      - ZhgChgLi/linkyee
-
-  # Public profile stats (followers / following / public_repos). Use as:
-  #   {{ vars.GithubProfilePlugin['user'].followers }}
-  - GithubProfilePlugin:
-      - ZhgChgLi
-
-  # Latest items from any RSS / Atom feed (Medium, blogs, YouTube channels,
-  # podcasts...). Returns an array of { title, url, date } per feed URL.
-  # Iterate inside theme index.html with {% for item in vars.RSSFeedPlugin[...] %}.
-  - RSSFeedPlugin:
-      - https://en.zhgchg.li/feed.xml
-
-  # Days until / since a target date. Hash-style — labels become keys.
-  # Use as: {{ vars.CountdownPlugin.label.days }}, .target, .passed
-  - CountdownPlugin:
-      linkyee_release: "2024-12-21"
-
-  # Latest video for one or more YouTube channels (channel id, @handle, or URL).
-  # Use as: {{ vars.YouTubeChannelLatestVideoPlugin['@handle'].title }}
-  #         {{ vars.YouTubeChannelLatestVideoPlugin['@handle'].url }}
-  - YouTubeChannelLatestVideoPlugin:
-      - "@zhgchgli"
+plugins: []
 
 # -----------------------------------------------------------------------------
 # Tracking
@@ -82,12 +47,11 @@ google_analytics_id:
 # -----------------------------------------------------------------------------
 # Profile header
 # -----------------------------------------------------------------------------
-title: "Enlaces de ZhgChgLi"
+title: "CODES - UNLu"
 avatar: "./images/logo.png"
-name: "@zhgchgli"
+name: "@CODES++"
 tagline: >-
-    Desarrollador de iOS, web y automatización de Taiwán 🇹🇼, al que también le encanta compartir, viajar y escribir.
-    Seguido por {{ vars.GithubProfilePlugin['ZhgChgLi'].followers }} personas en GitHub, con {{ vars.GithubProfilePlugin['ZhgChgLi'].repos }} repositorios públicos.
+    Centro Organizado de Estudiantes de Sistemas de la Universidad Nacional de Luján (UNLu).
 
 # -----------------------------------------------------------------------------
 # Links
@@ -100,121 +64,74 @@ tagline: >-
 # -----------------------------------------------------------------------------
 links:
   - link:
-      icon: "fa-solid fa-rss"
-      text: "Blog técnico <span class='link-button-text'>(más de 120 artículos)</span>"
-      url: "https://zhgchg.li"
-      alt: "Blog de tecnología y viajes de ZhgChgLi"
-      title: "Blog de tecnología y viajes de ZhgChgLi"
+      icon: "fa-solid fa-globe"
+      text: "Sitio web oficial"
+      url: "https://www.codesunlu.tech/"
+      alt: "Sitio web oficial del CODES++"
+      title: "Sitio web oficial del CODES++"
       target: "_blank"
-
-  # → uses GithubRepoStarsCountPlugin
-  - link:
-      icon: "fa-brands fa-swift"
-      text: "ZMarkupParser <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMarkupParser']}} estrellas)</span>"
-      url: "https://github.com/ZhgChgLi/ZMarkupParser"
-      alt: "ZMarkupParser es una biblioteca escrita en Swift puro que convierte cadenas HTML en NSAttributedString con estilos y etiquetas personalizados."
-      title: "ZMarkupParser es una biblioteca escrita en Swift puro que convierte cadenas HTML en NSAttributedString con estilos y etiquetas personalizados."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-app-store-ios"
-      text: "ZReviewTender <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZReviewTender']}} estrellas)</span>"
-      url: "https://github.com/ZhgChgLi/ZReviewTender"
-      alt: "ZReviewTender es una herramienta para obtener reseñas de apps desde App Store y Google Play Console e integrarlas en tu flujo de trabajo."
-      title: "ZReviewTender es una herramienta para obtener reseñas de apps desde App Store y Google Play Console e integrarlas en tu flujo de trabajo."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-markdown"
-      text: "ZMediumToMarkdown <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMediumToMarkdown']}} estrellas)</span>"
-      url: "https://github.com/ZhgChgLi/ZMediumToMarkdown"
-      alt: "ZMediumToMarkdown es una herramienta que te permite descargar y convertir tus publicaciones de Medium a formato Markdown sin esfuerzo."
-      title: "ZMediumToMarkdown es una herramienta que te permite descargar y convertir tus publicaciones de Medium a formato Markdown sin esfuerzo."
-      target: "_blank"
-
-  # → uses GithubRepoStarsCountPlugin + GithubLastCommitPlugin
   - link:
       icon: "fa-brands fa-github"
-      text: "linkyee <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/linkyee']}} ⭐ · última actualización {{ vars.GithubLastCommitPlugin['ZhgChgLi/linkyee'].date }})</span>"
-      url: "https://github.com/ZhgChgLi/linkyee"
-      alt: "linkyee es una alternativa a LinkTree de código abierto y totalmente personalizable, desplegada directamente en GitHub Pages."
-      title: "linkyee es una alternativa a LinkTree de código abierto y totalmente personalizable, desplegada directamente en GitHub Pages."
+      text: "Repositorios en GitHub"
+      url: "https://github.com/CODES-UNLU"
+      alt: "Repositorios del CODES en GitHub"
+      title: "Repositorios del CODES en GitHub"
       target: "_blank"
-
-  # → uses RSSFeedPlugin (latest blog post). `latest: true` opts into the
-  #   theme's "LATEST" badge styling.
-  - link:
-      icon: "fa-solid fa-newspaper"
-      text: "{{ vars.RSSFeedPlugin['https://en.zhgchg.li/feed.xml'][0].title }}"
-      url: "{{ vars.RSSFeedPlugin['https://en.zhgchg.li/feed.xml'][0].url }}"
-      alt: "Última publicación del blog de ZhgChgLi"
-      title: "Última publicación del blog"
-      target: "_blank"
-      latest: true
-
-  # → uses YouTubeChannelLatestVideoPlugin
-  - link:
-      icon: "fa-brands fa-youtube"
-      text: "{{ vars.YouTubeChannelLatestVideoPlugin['@zhgchgli'].title }}"
-      url: "{{ vars.YouTubeChannelLatestVideoPlugin['@zhgchgli'].url }}"
-      alt: "Último video de YouTube"
-      title: "Último video de YouTube"
-      target: "_blank"
-      latest: true
 
 # -----------------------------------------------------------------------------
 # Social media buttons
 # -----------------------------------------------------------------------------
 socials:
   - social:
-      icon: "fa-brands fa-medium"
-      url: "https://blog.zhgchg.li"
-      title: "Medium de ZhgChgLi"
-      alt: "Medium de ZhgChgLi"
+      icon: "fa-brands fa-instagram"
+      url: "https://www.instagram.com/codes_unlu/"
+      title: "Instagram del CODES"
+      alt: "Instagram del CODES"
+      target: "_blank"
+  - social:
+      icon: "fa-brands fa-x-twitter"
+      url: "https://x.com/codes_unlu"
+      title: "X del CODES"
+      alt: "X del CODES"
+      target: "_blank"
+  - social:
+      icon: "fa-brands fa-facebook"
+      url: "https://www.facebook.com/profile.php?id=61585314745245"
+      title: "Facebook del CODES"
+      alt: "Facebook del CODES"
+      target: "_blank"
+  - social:
+      icon: "fa-brands fa-discord"
+      url: "https://discord.gg/2hbjvN7KDH"
+      title: "Discord oficial del CODES"
+      alt: "Discord oficial del CODES"
       target: "_blank"
   - social:
       icon: "fa-brands fa-github"
-      url: "https://github.com/ZhgChgLi"
-      title: "GitHub de ZhgChgLi"
-      alt: "GitHub de ZhgChgLi"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-twitter"
-      url: "https://twitter.com/zhgchgli"
-      title: "Twitter de ZhgChgLi"
-      alt: "Twitter de ZhgChgLi"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/zhgchgli/"
-      title: "LinkedIn de ZhgChgLi"
-      alt: "LinkedIn de ZhgChgLi"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-instagram"
-      url: "https://www.instagram.com/zhgchgli/"
-      title: "Instagram de ZhgChgLi"
-      alt: "Instagram de ZhgChgLi"
+      url: "https://github.com/CODES-UNLU"
+      title: "GitHub del CODES"
+      alt: "GitHub del CODES"
       target: "_blank"
   - social:
       icon: "fa-solid fa-envelope"
-      url: "mailto:zhgchgli@gmail.com"
-      title: "Correo: zhgchgli@gmail.com"
-      alt: "Correo: zhgchgli@gmail.com"
-      target: "_blank"
+      url: "mailto:sistemas@codesunlu.tech"
+      title: "Correo: sistemas@codesunlu.tech"
+      alt: "Correo: sistemas@codesunlu.tech"
+      target: "_self"
 
 # -----------------------------------------------------------------------------
-# Footer (uses CountdownPlugin)
+# Footer
 # -----------------------------------------------------------------------------
 footer: >
-    ¡Hola! Sígueme en Medium o GitHub, o mantente conectado en Instagram o LinkedIn.
-    <br>linkyee lleva en línea {{ vars.CountdownPlugin.linkyee_release.days }} días. 🎉
+    Centro Organizado de Estudiantes de Sistemas · Universidad Nacional de Luján.
 
 # Footer copyright message
 # Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
 copyright: >
-  © {{ year }} <a href="https://link.zhgchg.li" target="_blank">ZhgChgLi</a>. Desarrollado con <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
+  © {{ year }} CODES - UNLu. Desarrollado con <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
 
 # Etiquetas de interfaz del tema (accesibilidad y badges)
 ui:
-  profile_picture: Foto de perfil
+  profile_picture: Logo del CODES
   primary_links: Enlaces principales
   latest: RECIENTE
