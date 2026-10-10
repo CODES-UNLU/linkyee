@@ -71,11 +71,25 @@ links:
       title: "Sitio web oficial del CODES++"
       target: "_blank"
   - link:
+      icon: "fa-brands fa-instagram"
+      text: "Seguinos en Instagram"
+      url: "https://www.instagram.com/codes_unlu/"
+      alt: "Instagram del CODES"
+      title: "Instagram del CODES"
+      target: "_blank"
+  - link:
       icon: "fa-brands fa-github"
       text: "Repositorios en GitHub"
       url: "https://github.com/CODES-UNLU"
       alt: "Repositorios del CODES en GitHub"
       title: "Repositorios del CODES en GitHub"
+      target: "_blank"
+  - link:
+      icon: "fa-solid fa-book"
+      text: "Wiki del CODES"
+      url: "https://wiki.codesunlu.com.ar/"
+      alt: "Wiki del CODES"
+      title: "Wiki del CODES"
       target: "_blank"
 
 # -----------------------------------------------------------------------------
