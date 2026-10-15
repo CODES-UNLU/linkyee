@@ -49,7 +49,7 @@ google_analytics_id:
 # -----------------------------------------------------------------------------
 title: "CODES - UNLu"
 avatar: "./images/logo.svg"
-name: "@CODES++"
+name: "@CODES"
 tagline: >-
     Centro Organizado de Estudiantes de Sistemas de la Universidad Nacional de Luján (UNLu).
 
@@ -67,8 +67,8 @@ links:
       icon: "fa-solid fa-globe"
       text: "Sitio web oficial"
       url: "https://www.codesunlu.tech/"
-      alt: "Sitio web oficial del CODES++"
-      title: "Sitio web oficial del CODES++"
+      alt: "Sitio web oficial del CODES"
+      title: "Sitio web oficial del CODES"
       target: "_blank"
   - link:
       icon: "fa-brands fa-instagram"

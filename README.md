@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./themes/glassmorphism/images/logo.svg" alt="CODES++ UNLu" width="200" />
+<img src="./themes/glassmorphism/images/logo.svg" alt="CODES UNLu" width="200" />
 
 # linkyee — CODES
 
@@ -45,7 +45,7 @@ plugins:                           # datos opcionales que se obtienen al constru
 
 title: "CODES - UNLu"              # encabezado del perfil
 avatar: "./images/logo.svg"
-name: "@CODES++"
+name: "@CODES"
 tagline: "Centro Organizado de Estudiantes de Sistemas de la UNLu."
 
 links:                             # botones de la lista de enlaces
@@ -57,7 +57,7 @@ links:                             # botones de la lista de enlaces
 
 socials: [ ... ]                   # fila de íconos de redes
 footer: "HTML libre."
-copyright: "© 2026 CODES++."
+copyright: "© 2026 CODES."
 ```
 
 Cada cambio en `config.yml` se publica con un push: GitHub Actions reconstruye el sitio y basta con recargar la página.
@@ -188,6 +188,6 @@ PORT=8081 REBUILD_INTERVAL=3600 docker compose up -d --build
 ## Créditos
 
 - **linkyee** es obra de [ZhgChgLi (Harry Li)](https://zhgchg.li/). Este repo es un fork de su proyecto: [github.com/ZhgChgLi/linkyee](https://github.com/ZhgChgLi/linkyee).
-- Adaptación y contenido para el CODES de la UNLu: **CODES++**.
+- Adaptación y contenido para el CODES de la UNLu.
 
 Si te sirvió el proyecto original, puedes apoyar a su autor [aquí](https://www.paypal.com/ncp/payment/CMALMPT8UUTY2).
