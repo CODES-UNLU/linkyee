@@ -48,7 +48,7 @@ google_analytics_id:
 # Profile header
 # -----------------------------------------------------------------------------
 title: "CODES - UNLu"
-avatar: "./images/logo.png"
+avatar: "./images/logo.svg"
 name: "@CODES++"
 tagline: >-
     Centro Organizado de Estudiantes de Sistemas de la Universidad Nacional de Luján (UNLu).

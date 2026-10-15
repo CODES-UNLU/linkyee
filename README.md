@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./themes/glassmorphism/images/logo.png" alt="CODES++ UNLu" width="240" />
+<img src="./themes/glassmorphism/images/logo.svg" alt="CODES++ UNLu" width="200" />
 
 # linkyee — CODES
 
@@ -44,7 +44,7 @@ plugins:                           # datos opcionales que se obtienen al constru
   - GithubRepoStarsCountPlugin: [ZhgChgLi/linkyee]
 
 title: "CODES - UNLu"              # encabezado del perfil
-avatar: "./images/logo.png"
+avatar: "./images/logo.svg"
 name: "@CODES++"
 tagline: "Centro Organizado de Estudiantes de Sistemas de la UNLu."
 
