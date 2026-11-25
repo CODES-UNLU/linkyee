@@ -91,6 +91,13 @@ links:
       alt: "Wiki del CODES"
       title: "Wiki del CODES"
       target: "_blank"
+  - link:
+      icon: "fa-solid fa-clipboard-list"
+      text: "Formulario del CODES"
+      url: "https://forms.gle/S5NMNxzc78KFLTdW9"
+      alt: "Formulario del CODES"
+      title: "Formulario del CODES"
+      target: "_blank"
 
 # -----------------------------------------------------------------------------
 # Social media buttons
