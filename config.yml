@@ -93,10 +93,10 @@ links:
       target: "_blank"
   - link:
       icon: "fa-solid fa-clipboard-list"
-      text: "Formulario del CODES"
+      text: "Formulario de contracursadas"
       url: "https://forms.gle/S5NMNxzc78KFLTdW9"
-      alt: "Formulario del CODES"
-      title: "Formulario del CODES"
+      alt: "Formulario de contracursadas"
+      title: "Formulario de contracursadas"
       target: "_blank"
 
 # -----------------------------------------------------------------------------
