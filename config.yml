@@ -64,6 +64,14 @@ tagline: >-
 # -----------------------------------------------------------------------------
 links:
   - link:
+      icon: "fa-solid fa-clipboard-list"
+      text: "Formulario de contracursadas"
+      url: "https://forms.gle/S5NMNxzc78KFLTdW9"
+      alt: "Formulario de contracursadas"
+      title: "Formulario de contracursadas"
+      target: "_blank"
+      latest: true
+  - link:
       icon: "fa-solid fa-globe"
       text: "Sitio web oficial"
       url: "https://codesunlu.com.ar/"
@@ -90,13 +98,6 @@ links:
       url: "https://wiki.codesunlu.com.ar/"
       alt: "Wiki del CODES"
       title: "Wiki del CODES"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-clipboard-list"
-      text: "Formulario de contracursadas"
-      url: "https://forms.gle/S5NMNxzc78KFLTdW9"
-      alt: "Formulario de contracursadas"
-      title: "Formulario de contracursadas"
       target: "_blank"
 
 # -----------------------------------------------------------------------------
